@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block {
+  width: 340px;
+  height: 340px;
+  background-color: tomato;
+  padding-left: 10px;
+}
+.block:hover {
+  animation-name: BlockAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes BlockAnimation {
+  0% {
+    background-color: tomato;
+  }
+  25% {
+    background-color: chocolate;
+  }
+  50% {
+    background-color: blueviolet;
+  }
+  75% {
+    background-color: brown;
+  }
+  100% {
+    background-color: tomato;
+  }
+}
+.block2 {
+  width: 340px;
+  height: 340px;
+  background-color: burlywood;
+  margin: 50px;
+}
+.block2:hover {
+  animation-name: Block2Animation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes Block2Animation {
+  0% {
+    background-color: burlywood;
+    height: 350px;
+  }
+  25% {
+    background-color: bisque;
+    width: 350px;
+  }
+  50% {
+    background-color: aqua;
+    height: 360px;
+  }
+  75% {
+    background-color: violet;
+    width: 360px;
+  }
+  100% {
+    background-color: burlywood;
+  }
+}
